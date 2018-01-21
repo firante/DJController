@@ -1,0 +1,11 @@
+import React, { Component } from 'react';
+
+export default class GeneralControlled extends Component {
+  render() {
+    return (
+      <div className="left full-width">
+	<div className="two-width mauto"></div>
+      </div>
+    );
+  }
+}

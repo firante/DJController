@@ -1,0 +1,7 @@
+const uploadSection = (props) => (
+  <div className="upload_section">
+    <div>
+      <input type="file" />
+    </div>
+  </div>
+);

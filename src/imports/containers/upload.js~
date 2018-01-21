@@ -1,0 +1,5 @@
+import { connect } from 'react-redux';
+
+import { Upload } from '../components/Upload.js';
+
+const mapStateToProps = state => ({ sounds : state.sounds });

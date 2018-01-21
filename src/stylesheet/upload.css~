@@ -1,0 +1,9 @@
+.upload_container {
+  width: 100%;
+  float: left;
+}
+
+.upload_container .upload_section {
+  width: 50%;
+  float: left;
+}

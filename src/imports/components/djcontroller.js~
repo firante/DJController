@@ -1,0 +1,19 @@
+import React, { Component } from 'react';
+import PlaySection from './play.section';
+import { Link } from 'react-router-dom';
+
+const DJController = (props) => (
+  <div className="upload_container">
+    <PlaySection
+      {...props}
+      section="1" />
+    <PlaySection
+      {...props}
+      section="2" />
+    <div className="upload_container">
+      <Link className="go-to-controller" to="/upload"> to upload</Link>
+    </div>
+  </div>
+);
+
+export default DJController;

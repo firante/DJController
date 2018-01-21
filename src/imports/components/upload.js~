@@ -1,0 +1,13 @@
+import React, { Component } from 'react';
+import "../../stylesheet/upload.css";
+import UploadSection from './uppload.section.js';
+export default class Upload extends Component {
+  render() {
+    return (
+	<div className="upload_container">
+	<UploadSection />
+	<UploadSection />
+	</div>
+    );
+  }
+}

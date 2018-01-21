@@ -1,0 +1,31 @@
+import React, { Component } from 'react';
+
+export default class PlaySection extends Component {
+  constructor() {
+    super();
+  }
+
+  renderSounds() {
+    const currentSectionFiles = this.props.sounds
+	  .filter(val=>val.section === this.props.section);
+    if(!currentSectionFiles.length) return null;
+    return currentSectionFiles[0].files.map((val, ind) => (
+      <li
+	key="ind"
+	onClick={(e) => this.props.setPlaySound(this.props.section, val)}> {val.name} </li>
+    ));
+  }
+  
+  render() {
+    return (
+      <div className="upload_section">
+	<div className="upload_container">
+	  <audio></audio>
+	</div>
+	<div className="upload_container">
+	  <ul></ul>
+	</div>
+      </div>
+    );
+  }
+}

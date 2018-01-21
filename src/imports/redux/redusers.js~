@@ -1,0 +1,45 @@
+import { combineReducers } from 'redux';
+import { ADD_SOUNDS, PLAY_SOUND } from './actions';
+
+function sounds(state = [], action) {
+  switch (action.type) {
+  case ADD_SOUNDS:
+    const currentNumber = state.filter(val=>val.section === action.sounds.section);
+    const newState = currentNumber.length ?
+	  {
+	    files: currentNumber[0].files.concat(action.sounds.files),
+	    section: action.sounds.section
+	  } :
+	  action.sounds;
+
+    return [
+      ...state.filter(val=>val.section !== action.sounds.section),
+      {
+	...newState
+      }
+    ];
+  default:
+    return state;
+  }
+}
+
+function play_sound(state=[], action) {
+  switch (action.type) {
+  case PLAY_SOUND:
+    return [
+      ...state.filter(val=>val.section !== action.section),
+      {
+	section: action.section,
+	fileName: action.fileName,
+	fileIndex: action.fileIndex,
+	file: action.file
+      }
+    ];
+  default:
+    return state;
+  }
+}
+
+const djapp = combineReducers({ sounds, play_sound });
+
+export default djapp;

@@ -1,0 +1,129 @@
+.upload_container {
+  width: 100%;
+  float: left;
+}
+
+.upload_section {
+  width: 50%;
+  float: left;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+
+.full-width {
+  width: 100%;
+}
+
+.three-width {
+  width: 33.3%;
+}
+
+.two-width {
+  width: 50%;
+}
+
+/* input */
+.input-file {
+  width: 100%;
+  display: none;
+}
+
+.input-file + label {
+  padding: 10px 20px;
+  background-color: #023e43;
+  color: #f3e0e0fc;
+  box-shadow: 0px 1px 5px 0px #5494aa;
+  cursor: pointer;
+  width: 91%;
+  display: inline-block;
+}
+
+.input-file + label:hover {
+  box-shadow: 0px 0px 15px 0px #5494aaf2;
+}
+
+.main-section {
+  padding-top: 10px;
+}
+
+.main-section .subsection {
+  padding-left: 20px;
+}
+
+/* list section */
+
+.list-of-file ul a {
+  text-decoration: none;
+}
+
+.list-of-file ul {
+  min-height: 30px;
+  max-height: 80vh;
+  overflow: auto;
+  border: 3px inset #5494aa;
+  padding: 0 5px;
+}
+
+.list-of-file ul li {
+  list-style: none;
+  padding: 10px 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: '';
+  background-color: #3689a6;
+  box-shadow: 0px 0px 5px 0px #000000;
+}
+
+.list-of-file ul li:hover {
+  transform: translateY(2px);
+  box-shadow: 0px 0px 10px 0px #000000;
+}
+
+.go-to-controller {
+  float: left;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #023e43;
+}
+
+.ptb10 {
+  padding: 10px 0;
+}
+
+.prl5 {
+  padding: 0 5px;
+}
+
+.mh20 {
+  min-height: 20px;
+}
+
+.mrl5 {
+  margin: 0 1px;
+}
+
+.soundP {
+  margin: 5px 0;
+  height: 10px;
+}
+
+.mauto {
+  margin: 0 auto;
+}
+
+.inl-block {
+  display: inline-block;
+}
+
+.w90 {
+  width: 90%;
+}
